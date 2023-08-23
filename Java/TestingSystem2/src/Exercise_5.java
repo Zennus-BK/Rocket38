@@ -135,7 +135,29 @@ public class Exercise_5 {
 //            department
 //    Nếu người dùng nhập vào số khác thì in ra text "Mời bạn nhập
 //    lại" và quay trở lại bước 1
-//
+    public static void Exercise5Question8() {
+        System.out.println("Question 8");
+        Scanner sc = new Scanner(System.in);
+        int i;
+        while (true) {
+            System.out.println("Nhập chức năng: 1. Tạo account 2. Tạo Department");
+            i = sc.nextInt();
+            if (i!=1 && i!=2) {
+                System.out.println("Nhập lại chức năng");
+            }
+            else {
+                switch (i) {
+                    case 1:
+                        Exercise5Question5();
+                        break;
+                    case 2:
+                        Exercise5Question6();
+                        break;
+                }
+                break;
+            }
+        }
+    }
 //    Question 9:
 //    Viết method cho phép người dùng thêm group vào account theo flow sau:
 //    Bước 1:
